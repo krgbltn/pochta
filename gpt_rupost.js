@@ -2160,6 +2160,7 @@ if (message.message_type === 1 && !IS_QUERY_REPORT) {
 } else if (IS_QUERY_REPORT) {
 	main()
 		.then((res) => {
+		.then((res) => {
 			resolve({ answer: res });
 		})
 		.catch((error) => {
